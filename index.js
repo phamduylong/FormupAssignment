@@ -1,8 +1,8 @@
 import getPlayerScores from "./playerScores.js";
 
 /**
- * Sort players by each player amout of wins accumulated
- * @asyncfunction
+ * Sort players by each player amount of wins accumulated
+ * @async-function
  * @returns Array
  */
 export default async function playersByScore() {
