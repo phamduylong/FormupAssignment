@@ -1,4 +1,10 @@
 import getPlayerScores from "./playerScores.js";
+
+/**
+ * Sort players by each player amout of wins accumulated
+ * @asyncfunction
+ * @returns Array
+ */
 export default async function playersByScore() {
     const winner_list = [];
     const win_counts = [];
@@ -17,6 +23,7 @@ export default async function playersByScore() {
     }
 
     //sorting and keeping players name only
-    const sortedLeaderboard = Object.keys(win_counts).sort((a, b) => { return win_counts[b] - win_counts[a]; });
-    return sortedLeaderboard;
+    return Object.keys(win_counts).sort((a, b) => {
+        return win_counts[b] - win_counts[a];
+    });
 }
