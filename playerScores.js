@@ -18,7 +18,7 @@ export default function getPlayerScores() {
             let p2Name;
             do {
                 p2Name = players[Math.floor(Math.random() * players.length)];
-            } while (p1Name == p2Name);
+            } while (p1Name === p2Name);
 
             const p1Score = Math.round(Math.random() * 10);
             const p2Score = Math.round(Math.random() * 10);
